@@ -2,8 +2,11 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnSave": true,
     "editor.codeActionsOnSave": {
-      "source.fixAll": "explicit",
-      "source.organizeImports": "explicit"
+        "source.fixAll": "explicit",
+        "source.organizeImports": "explicit"
     },
-    "eslint.workingDirectories": ["./NextJs"]
-  }
+    "eslint.workingDirectories": ["./NextJs"],
+    "[scss]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    }
+}
