@@ -1,0 +1,52 @@
+// styles.scss
+.add-blog-form {
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-input,
+.form-select,
+.form-textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-input {
+    height: 40px;
+}
+
+.form-select {
+    height: 40px;
+    padding: 10px;
+}
+
+.form-textarea {
+    height: 100px;
+    padding: 10px;
+}
+
+.form-file {
+    padding: 10px;
+    border: none;
+}
+
+.form-button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.form-button:hover {
+    background-color: #3e8e41;
+}

@@ -37,14 +37,8 @@ export const setLocalStorage = (
     shouldStringify: boolean = false
 ) => {
     try {
-        let currentItemSize = 0;
         const valueToStore = shouldStringify ? JSON.stringify(value) : value;
-        currentItemSize += encodeURIComponent(key).length;
-        currentItemSize += valueToStore.length;
-
-        if (getLocalStorageSize() + currentItemSize < 5000000) {
-            localStorage.setItem(key, valueToStore);
-        }
+        localStorage.setItem(key, valueToStore);
     } catch (e) {
         // For developers, console.log 'e' to debug issue
         toast.error('Could not store this data');
@@ -119,4 +113,8 @@ export const getSessionStorage = (
     }
 
     return null;
+};
+
+export const deepCopy = (obj: any) => {
+    return JSON.parse(JSON.stringify(obj));
 };
